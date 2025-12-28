@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petroil</title>
+    <link rel="shortcut icon" href="images/Tears.png" type="image/x-icon" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/484dd57b31.js" crossorigin="anonymous"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="bg-[#282828]">
+            <div class="text-white container mx-auto">
+                <div
+                    class="flex flex-col md:flex-row justify-center items-center md:justify-between py-1.5 px-3 lg:w-[950px] mx-auto gap-2 md:gap-0">
+                    <!-- left -->
+                    <div class="flex flex-col md:flex-row gap-0 md:gap-3 ">
+                        <div
+                            class="flex items-center gap-1 text-sm md:text-base lg:text-xl hover:underline hover:text-[#F40404] transition duration-300 ease-in-out cursor-pointer">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>mail@yourcompany.com</p>
+                        </div>
+                        <div class="h-6 w-0.5 bg-gray-50 hidden md:block"></div>
+                        <div
+                            class="flex items-center gap-1 text-sm md:text-base lg:text-xl hover:underline hover:text-[#F40404] transition duration-300 ease-in-out cursor-pointer">
+                            <i class="fa-solid fa-phone-volume"></i>+896 120 5889 (Toll
+                            free)
+                        </div>
+                    </div>
+                    <!-- right -->
+                    <div class="lg:text-xl">
+                        <i
+                            class="fa-brands fa-facebook-f cursor-pointer hover:text-[#F40404] transition duration-300 ease-in-out"></i>
+                        <i
+                            class="fa-brands fa-twitter cursor-pointer hover:text-[#F40404] transition duration-300 ease-in-out"></i>
+                        <i
+                            class="fa-brands fa-linkedin cursor-pointer hover:text-[#F40404] transition duration-300 ease-in-out"></i>
+                        <i
+                            class="fa-brands fa-instagram cursor-pointer hover:text-[#F40404] transition duration-300 ease-in-out"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-px md:h-0.5 bg-[#FFB800]"></div>
+
+        <!-- Navbar  -->
+        <div class="bg-[#F40404]">
+            <div class=" container lg:w-[950px] mx-auto flex flex-row items-center justify-between p-4 relative">
+                <div class="cursor-pointer mb-5 md:mb-0"><img src="images/Logo.png" alt=""></div>
+
+                <!-- compact hamburger (visible md and below) -->
+                <button id="nav-toggle" class="lg:hidden text-white p-2" aria-controls="nav-menu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+                <nav id="nav-menu"
+                    class="fixed inset-y-0 right-0 w-64 transform translate-x-full transition-transform duration-300 bg-[#282828]/70 backdrop-blur-sm text-white lg:static lg:translate-x-0 lg:w-auto lg:bg-transparent lg:flex lg:items-center lg:transition-none">
+                    <!-- close button (mobile) -->
+                    <button id="nav-close" class="lg:hidden absolute top-3 right-3 text-white p-2"
+                        aria-label="Close navigation">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+
+                    <ul
+                        class="text-white text-sm md:text-base lg:text-xl flex flex-col md:flex-row items-start md:items-center justify-start md:justify-center gap-6 p-6 lg:p-0">
+                        <div class="flex flex-col gap-5 md:flex-row">
+                            <li class=" cursor-pointer hover:text-black transition duration-300 ease-in-out"><a
+                                    href="#home">Home</a></li>
+                            <li class=" cursor-pointer hover:text-black transition duration-300 ease-in-out"><a
+                                    href="#about">About</a></li>
+                            <li class=" cursor-pointer hover:text-black transition duration-300 ease-in-out"><a
+                                    href="#gallery">Gallery</a></li>
+                            <li class=" cursor-pointer hover:text-black transition duration-300 ease-in-out"><a
+                                    href="#services">Services</a></li>
+                            <li class=" cursor-pointer hover:text-black transition duration-300 ease-in-out"><a
+                                    href="#blog">Blog</a></li>
+                        </div>
+                        <div>
+                            <li
+                                class=" border px-3 py-1 md:px-3 md:py-2 lg:px-8 lg:py-3 cursor-pointer hover:text-black hover:bg-white hover:border-white transition duration-300 ease-in-out md:m-2 ">
+                                <a href="#contact">Contact</a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- hero -->
+        <section>
+            <div
+                class="bg-[url('./images/unsplash_vEoMKBdUIzs.png')] bg-no-repeat bg-[position:70%_center] lg:bg-[position:center] bg-cover">
+                <div class="bg-black/60">
+                    <!-- hero text  -->
+                    <div
+                        class="container mx-auto h-[70vh] md:h-[90vh] lg:h-screen lg:w-[950px] mx-auto flex flex-col justify-center gap-5 px-3 items-center text-center md:text-start md:items-start ">
+                        <div class="text-2xl md:text-4xl font-bold leading-relaxed text-white lg:w-[55%] ">
+                            <h1>We exist since 1975 on the oil and gas industry.</h1>
+                        </div>
+                        <button
+                            class=" w-fit bg-[#F40404] px-8 py-3 cursor-pointer text-base md:text-lg text-white hover:text-[#F40404] hover:bg-white transition duration-300 ease-in-out">Learn
+                            More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About  -->
+        <section id="about">
+            <div class="container mx-auto px-3">
+                <div
+                    class="lg:w-[950px] mx-auto flex flex-col lg:flex-row gap-2 md:gap-5 justify-center md:justify-between items-center my-5 md:my-10 lg:my[78px]">
+                    <!-- left -->
+                    <div>
+                        <h1
+                            class="text-2xl md:text-3xl lg:text-4xl font-bold items-center text-center lg:leading-relaxed">
+                            The biggest
+                            supplier on the country</h1>
+                    </div>
+
+                    <!-- right -->
+                    <div>
+                        <h1 class="font-medium items-center text-center md:text-start text-[#6C6C6C]">It is a long
+                            established fact that a reader will be distracted by the readable content of a page when
+                            looking
+                            at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                            distribution.
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery  -->
+        <section id="gallery">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5 my-5 ">
+                <div class="aspect-[458/426]">
+                    <img class="object-cover w-full h-full" src="./images/gallery 1.png" alt="">
+                </div>
+                <div class="aspect-[458/426]">
+                    <img class="object-cover w-full h-full" src="./images/gallery 2.png" alt="">
+                </div>
+                <div class="aspect-[458/426]">
+                    <img class="object-cover w-full h-full" src="./images/gallery 3.png" alt="">
+                </div>
+                <div class="aspect-[458/426]">
+                    <img class="object-cover w-full h-full" src="./images/gallery 4.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Service section  -->
+        <section id="services">
+            <div class="grid grid-cols-1 md:grid-cols-2 mt-5 gap-3 md:gap-0">
+                <!-- srvc 1 -->
+                <div
+                    class="aspect-[960/410] flex flex-col justify-center items-center lg:items-start lg:ms-10 xl:ps-63">
+                    <h1 class="text-xl md:text-3xl lg:text-5xl font-bold">Our Services</h1>
+                    <h1 class="text-[#6C6C6C] w-[60%] text-medium text-sm md:text-base text-center lg:text-start">It is
+                        a long established
+                        fact that a reader will be distracted by the readable content of a page when looking at its
+                        layout.</h1>
+                </div>
+
+                <!-- srvc 2 -->
+                <div class="aspect-[960/410]">
+                    <div
+                        class="h-full w-full bg-[url('./images/service1.png')] bg-no-repeat bg-cover flex items-center">
+                        <div
+                            class="bg-black/60 h-full w-full flex flex-col gap-5 justify-center items-center md:items-start px-3">
+                            <h1
+                                class="mx-auto md:ms-20 lg:ms-40 md:mx-0 text-white text-xl lg:text-2xl font-bold text-center md:text-start">
+                                Modern natural oil and gas refineries.</h1>
+                            <button
+                                class=" w-fit bg-[#F40404] md:ms-20 lg:ms-40 px-4 py-1 lg:px-8 lg:py-3 cursor-pointer text-base md:text-lg text-white hover:text-[#F40404] hover:bg-white transition duration-300 ease-in-out">Learn
+                                More</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- srvc 3 -->
+                <div class="aspect-[960/410]">
+                    <div
+                        class="h-full w-full bg-[url('./images/service2.png')] bg-no-repeat bg-cover flex items-center">
+                        <div
+                            class="h-full w-full bg-black/60 flex flex-col gap-5 justify-center items-center md:items-start px-3">
+                            <h1
+                                class="mx-auto md:ms-20 lg:ms-40 md:mx-0 text-white text-xl lg:text-2xl font-bold text-center md:text-start">
+                                Supply of national industries.</h1>
+                            <button
+                                class=" w-fit bg-[#F40404] md:ms-20 lg:ms-40 px-4 py-1 lg:px-8 lg:py-3 cursor-pointer text-base md:text-lg text-white hover:text-[#F40404] hover:bg-white transition duration-300 ease-in-out">Learn
+                                More</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- srvc 4 -->
+                <div class="aspect-[960/410]">
+                    <div class="h-full w-full bg-[url('./images/service3.png')] bg-no-repeat bg-cover">
+                        <div
+                            class="h-full w-full bg-black/60 flex flex-col gap-5 justify-center items-center md:items-start px-3">
+                            <h1
+                                class="mx-auto md:ms-20 lg:ms-40 md:mx-0 text-white text-xl lg:text-2xl font-bold text-center md:text-start">
+                                National fuel distribution and supply.</h1>
+                            <button
+                                class=" w-fit bg-[#F40404] md:ms-20 lg:ms-40 px-4 py-1 lg:px-8 lg:py-3 cursor-pointer text-base md:text-lg text-white hover:text-[#F40404] hover:bg-white transition duration-300 ease-in-out">Learn
+                                More</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#F0F0F0]">
+            <div class="flex flex-col md:flex-row mx-auto container lg:w-[950px] py-3 md:py-10 lg:py-20 ">
+                <div
+                    class="w-full md:w-1/3 bg-[#F40404] text-white text-center font-bold text-xl flex justify-center items-center ">
+                    <h1 class="py-3 md:py-20 leading-snug md:leading-relaxed">Learn more <br>about our <br>Company</h1>
+                </div>
+                <div class="w-full md:w-2/3 bg-[url('./images/promo.png')] bg-cover aspect-[16/9] ">
+                    <div class="flex justify-center items-center h-full">
+                        <button
+                            class=" w-fit bg-white text-[#F40404] px-8 py-3 cursor-pointer text-base md:text-lg hover:text-white hover:bg-[#F40404] transition duration-300 ease-in-out">Learn
+                            More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- brands -->
+        <section>
+            <div class="container mx-auto lg:w-[950px] grid grid-cols-2 md:grid-cols-4 lg:my-10 px-3">
+                <div>
+                    <img src="./images/Logo1.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/Logo2.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/Logo3.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/Logo4.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- blog  -->
+        <section id="blog" class="bg-[#F0F0F0]">
+            <div class="lg:w-[950px] container mx-auto lg:gap-15 md:py-10 lg:py-20 px-3">
+
+
+                <div class="  grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-10  ">
+                    <div class="bg-[url('./images/blog1.png')] bg-cover h-full w-full aspect-[339/401]">
+                        <div class="bg-black/60 h-full w-full flex flex-col justify-center items-center gap-3">
+                            <div class="text-white font-bold text-lg text-center">
+                                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, enim.</h1>
+                            </div>
+                            <div>
+                                <button
+                                    class="text-white bg-white/50 px-5 py-3 cursor-pointer hover:bg-[#F40404] transition duration-300 ease-in-out">Learn
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="bg-[url('./images/blog2.png')] bg-cover h-full w-full aspect-[339/401]">
+                        <div class="bg-black/60 h-full w-full flex flex-col justify-center items-center gap-3">
+                            <div class="text-white font-bold text-lg text-center">
+                                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, enim.</h1>
+                            </div>
+                            <div>
+                                <button
+                                    class="text-white bg-white/50 px-5 py-3 cursor-pointer hover:bg-[#F40404] transition duration-300 ease-in-out">Learn
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="bg-[url('./images/blog3.png')] bg-cover h-full w-full aspect-[339/401]">
+                        <div class="bg-black/60 h-full w-full flex flex-col justify-center items-center gap-3">
+                            <div class="text-white font-bold text-lg text-center">
+                                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, enim.</h1>
+                            </div>
+                            <div>
+                                <button
+                                    class="text-white bg-white/50 px-5 py-3 cursor-pointer hover:bg-[#F40404] transition duration-300 ease-in-out">Learn
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center md:justify-end font-bold ">
+                    <h1
+                        class="my-5 md:mt-5 md:mb-0 hover:text-[#F40404] hover:underline transition duration-300 ease-in-out cursor-pointer">
+                        MORE FROM THE VLOG ></h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- maps -->
+        <section id="contact">
+            <div">
+                <img src="./images/Maps.png" alt="">
+                </div>
+                <div class="bg-[#F40404]">
+                    <div
+                        class="px-3 container flex flex-col md:flex-row gap-3 justify-between items-center mx-auto lg:w-[950px] py-3 md:py-8 ">
+                        <h1 class="font-bold text-xl md:text-3xl text-white text-center my-3 md:my-0">Want to join as
+                            member branch in
+                            your area?</h1>
+                        <button id="open-contact"
+                            class="px-3 py-2 md:px-5 md:py-3 cursor-pointer text-white border-3 border-white font-semibold text-lg  md:text-xl hover:text-[#F40404] hover:bg-white transition duration-300 ease-in-out">CONTACT</button>
+                    </div>
+                </div>
+        </section>
+        <div class="w-full h-px md:h-0.5 bg-[#FFB800]"></div>
+    </main>
+
+
+    <!-- footer  -->
+    <footer>
+        <div class="bg-[#1F1F1F]">
+            <div class="container mx-auto lg:w-[950px] py-5 md:py-15 lg:py-20">
+                <div
+                    class="flex justify-between flex-col md:flex-row gap-3 items-center md:items-start text-center md:text-start px-3">
+                    <div class="text-white flex flex-col items-center md:items-start">
+                        <div class="mb-5"><img src="./images/Logo_footer.png" alt=""></div>
+                        <div
+                            class="flex gap-2 font-thin items-center mb-2 hover:text-[#F40404] hover:underline cursor-pointer transition duration-300 ease-in-out">
+                            <i class="fa-regular fa-envelope"></i>
+                            <h1>mail@yourcompany.com</h1>
+                        </div>
+                        <div
+                            class="flex gap-2 font-thin items-center mb-2 hover:text-[#F40404] hover:underline cursor-pointer transition duration-300 ease-in-out">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <h1>+896 120 5889 (Toll free)</h1>
+                        </div>
+                        <div
+                            class="flex gap-2 font-thin items-center mb-2 hover:text-[#F40404] hover:underline cursor-pointer transition duration-300 ease-in-out">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <h1>101 Baker Street, New York, USA, 12345</h1>
+                        </div>
+                    </div>
+
+                    <div class="text-white font-thin">
+                        <ul>
+                            <li class="font-normal mb-5">Company</li>
+                            <li
+                                class="cursor-pointer hover:text-[#F40404] transition duration-300 ease-in-out hover:underline">
+                                Home</li>
+                            <li
+                                class="cursor-pointer hover:text-[#F40404] transition duration-300 ease-in-out hover:underline">
+                                About</li>
+                            <li
+                                class="cursor-pointer hover:text-[#F40404] transition duration-300 ease-in-out hover:underline">
+                                Services</li>
+                            <li
+                                class="cursor-pointer hover:text-[#F40404] transition duration-300 ease-in-out hover:underline">
+                                Gallery</li>
+                        </ul>
+                    </div>
+                    <div class="text-white font-thin">
+                        <ul>
+                            <li class="font-normal mb-5">Other</li>
+                            <li
+                                class="cursor-pointer hover:text-[#F40404] transition duration-300 ease-in-out hover:underline">
+                                Blog</li>
+                            <li
+                                class="cursor-pointer hover:text-[#F40404] transition duration-300 ease-in-out hover:underline">
+                                Contact</li>
+                            <li
+                                class="cursor-pointer hover:text-[#F40404] transition duration-300 ease-in-out hover:underline">
+                                Terms & Conditions </li>
+                            <li
+                                class="cursor-pointer hover:text-[#F40404] transition duration-300 ease-in-out hover:underline">
+                                Privacy Policy</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="text-white mb-5">Certificates</h1>
+                        <div class="flex gap-3">
+                            <img src="./images/Cert1.png" alt="">
+                            <img src="./images/Cert2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[#282828]">
+            <div class=" container mx-auto lg:w-[950px] py-3 md:py-7">
+                <h1 class="text-[#6C6C6C] font-medium text-center md:text-start">© Copyright 2025 by 'Abdul K Maruf' –
+                    All right reserved.</h1>
+            </div>
+        </div>
+    </footer>
+
+
+        <!-- contact form modal -->
+        <div id="contact-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50 opacity-0 transition-opacity duration-200">
+            <div class="modal-panel bg-white rounded-lg w-full max-w-md p-6 transform scale-95 transition-transform duration-200 relative">
+                <button id="contact-close" class="absolute top-3 right-3 text-gray-600 p-2" aria-label="Close form">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <h2 class="text-xl font-bold mb-3">Contact Us</h2>
+                <form id="contact-form" class="space-y-3">
+                    <div>
+                        <label class="sr-only" for="contact-name">Name</label>
+                        <input id="contact-name" name="name" required type="text" placeholder="Name" class="w-full border rounded p-2" />
+                    </div>
+                    <div>
+                        <label class="sr-only" for="contact-email">Email</label>
+                        <input id="contact-email" name="email" required type="email" placeholder="Email" class="w-full border rounded p-2" />
+                    </div>
+                    <div>
+                        <label class="sr-only" for="contact-details">Details</label>
+                        <textarea id="contact-details" name="details" required placeholder="Details" rows="4" class="w-full border rounded p-2"></textarea>
+                    </div>
+                    <div class="flex gap-3 justify-end">
+                        <button type="button" id="contact-clear" class="px-4 py-2 rounded border">Clear</button>
+                        <button type="submit" class="px-4 py-2 rounded bg-[#F40404] text-white">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- scroll to top -->
+        <button id="scroll-top" class="fixed bottom-6 right-6 z-50 w-10 h-10 rounded-full text-white flex items-center justify-center shadow-lg opacity-0 translate-y-2 pointer-events-none transition-opacity transition-transform duration-200" style="background-color:#F40404;" aria-label="Scroll to top" title="Scroll to top">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+            </svg>
+        </button>
+        <script src="main.js"></script>
+    </body>
+
+</html>
